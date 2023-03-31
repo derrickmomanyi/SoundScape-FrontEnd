@@ -1,3 +1,4 @@
+import React from 'react'
 import YouTube from 'react-youtube'
 import CommentForm from './CommentForm';
 import Comment from './Comment';

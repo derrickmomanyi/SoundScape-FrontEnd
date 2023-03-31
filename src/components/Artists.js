@@ -1,4 +1,4 @@
-
+import React from 'react'
 import ArtistPage from "./ArtistPage";
 import '../css/Artists.css'
 
