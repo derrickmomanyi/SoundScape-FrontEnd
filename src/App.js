@@ -43,7 +43,7 @@ function App() {
     .then(res => res.json())
     .then((albums) => setAlbums(albums))
   }, []);
-  console.log(albums);
+  // console.log(albums);
 
   useEffect(() => {
     fetch(`https://railsapp-soundscape.onrender.com/artists`)

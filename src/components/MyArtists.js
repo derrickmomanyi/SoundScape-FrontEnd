@@ -7,9 +7,9 @@ const MyArtists = ( { user } ) => {
 const [userArtists, setUserArtists] = useState([])
 
   useEffect(() => {
-      fetch(`https://railsapp-soundscape.onrender.com/users/${user.id}`)
+      fetch(`https://railsapp-soundscape.onrender.com/user_artists`)
       .then(res => res.json())
-      .then(user => setUserArtists(user.user_artists))
+      .then(user => setUserArtists(user))
   }, [user.id])
 
   function onDeleteUserArtist(id) {
