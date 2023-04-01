@@ -35,7 +35,7 @@ const EachSong = ( { user } ) => {
 // console.log(song.song_videos);
 
 
-if (!isLoaded) return <h2>Loading...</h2>
+if (!isLoaded) return <h2 className='loading'>Loading...</h2>
 
 let videoId
 song.music_video.startsWith("https://youtu.be") ? videoId = song.music_video.slice(17, 28) : videoId = song.music_video.slice(32, 43)

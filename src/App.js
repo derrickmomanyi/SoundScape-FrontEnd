@@ -39,14 +39,14 @@ function App() {
   },[]);
 
   useEffect(() => {
-    fetch('/albums')
+    fetch('https://soundscape-development.onrender.com/albums')
     .then(res => res.json())
     .then((albums) => setAlbums(albums))
   }, []);
   // console.log(albums);
 
   useEffect(() => {
-    fetch(`/artists`)
+    fetch(`https://soundscape-development.onrender.com/artists`)
     .then((r) => r.json())
     .then(artists => setArtists(artists))
   }, [])

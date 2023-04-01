@@ -22,7 +22,7 @@ const EachAlbum = ( { user } ) => {
 }, [id])
 
 
-if (!isLoaded) return <h2>Loading...</h2>
+if (!isLoaded) return <h2 className='loading'>Loading...</h2>
 
 const {year, label, artist} = album
 
