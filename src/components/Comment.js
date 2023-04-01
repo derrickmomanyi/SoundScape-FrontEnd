@@ -17,7 +17,7 @@ function Comment( { songVideoComment, handleDeleteComment, onUpdateComment, user
 
     function handleSubmit(e) {
         e.preventDefault()
-        fetch(`/song_video_comments/${id}`, {
+        fetch(`https://railsapp-soundscape.onrender.com/song_video_comments/${id}`, {
             method: "PATCH",
             headers: {
                 "Content-Type": "application/json",

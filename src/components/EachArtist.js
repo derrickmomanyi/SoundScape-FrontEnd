@@ -14,7 +14,7 @@ const EachArtist = ( { user }) => {
   const { id } = useParams();
 
   useEffect(() => {
-    fetch(`/artists/${id}`)
+    fetch(`https://railsapp-soundscape.onrender.com/artists/${id}`)
     .then((r) => r.json())
     .then(artist => {
       setArtist(artist);

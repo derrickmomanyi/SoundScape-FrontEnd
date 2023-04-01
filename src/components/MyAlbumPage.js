@@ -11,7 +11,7 @@ const MyAlbumPage = ( { userAlbum, onDeleteUserAlbum } ) => {
   }
 
   function handleDeleteUserAlbum() {
-    fetch(`/user_albums/${id}`, {
+    fetch(`https://railsapp-soundscape.onrender.com/user_albums/${id}`, {
         method:'DELETE'
       })
     onDeleteUserAlbum(id)

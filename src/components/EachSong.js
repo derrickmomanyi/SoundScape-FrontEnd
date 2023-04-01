@@ -23,7 +23,7 @@ const EachSong = ( { user } ) => {
   };
 
   useEffect(() => {
-    fetch(`/songs/${id}`)
+    fetch(`https://railsapp-soundscape.onrender.com/songs/${id}`)
     .then((r) => r.json())
     .then(song => {
       setSong(song);

@@ -17,7 +17,7 @@ function Login( {setUser} ){
             
         }
     
-        fetch('/login', {
+        fetch('https://railsapp-soundscape.onrender.com/login', {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",

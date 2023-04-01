@@ -12,7 +12,7 @@ const MySongRow = ( { userSong, onDeleteUserSong } ) => {
     const { artist_id } = song
 
     useEffect(() => {
-        fetch(`/artists/${artist_id}`)
+        fetch(`https://railsapp-soundscape.onrender.com/artists/${artist_id}`)
         .then(res => res.json())
         .then(artist => setArtist(artist))
     }, [artist_id])
@@ -37,7 +37,7 @@ const MySongRow = ( { userSong, onDeleteUserSong } ) => {
     }
 
     function handleDeleteUserSong() {
-        fetch(`/user_songs/${id}`, {
+        fetch(`https://railsapp-soundscape.onrender.com/user_songs/${id}`, {
             method:'DELETE'
           })
         onDeleteUserSong(id)
