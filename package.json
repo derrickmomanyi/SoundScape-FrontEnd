@@ -2,8 +2,7 @@
 {
   "name": "client",
   "version": "0.1.0",
-  "private": true,
-  "homepage": "/",
+  "private": true,  
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.3.0",
     "@fortawesome/free-regular-svg-icons": "^6.3.0",
@@ -53,5 +52,5 @@
     "@babel/helper-module-transforms": "7.19.6",
     "babel-loader": "8.2.5"
   },
-  "proxy": "https://soundscape-development.onrender.com"
+  "proxy": "https://railsapp-soundscape.onrender.com"
 }
