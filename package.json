@@ -50,5 +50,6 @@
     "@babel/helper-create-class-features-plugin": "7.19.0",
     "@babel/helper-module-transforms": "7.19.6",
     "babel-loader": "8.2.5"
-  }
+  },
+  "proxy": "https://soundscape-development.onrender.com"
 }
