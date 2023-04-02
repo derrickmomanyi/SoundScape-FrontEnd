@@ -9,9 +9,9 @@ const [userAlbums, setUserAlbums] = useState([])
 
 
   useEffect(() => {
-      fetch(`https://railsapp-soundscape.onrender.com/user_albums`)
+      fetch(`https://railsapp-soundscape.onrender.com//users/${user.id}`)
       .then(res => res.json())
-      .then(user => setUserAlbums(user))
+      .then(user => setUserAlbums(user.user_albums))
   }, [])
 
   function onDeleteUserAlbum(id) {
