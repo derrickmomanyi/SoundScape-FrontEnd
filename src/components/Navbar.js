@@ -13,7 +13,7 @@ function Navbar({ user, setUser}){
           .then((res) => {
             if (res.ok) {
               setUser(false);
-              navigate(`/albums`); 
+              navigate(`/`); 
               
             }
           });
